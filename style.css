@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'TriakisFont-Regular';
+  src: url('./TriakisFont-Regular.otf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide scrollbars */
+  background-color: black;
+}
+
+h1 {
+  font-family: 'TriakisFont-Regular', sans-serif;
+  font-size: 5em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Set a higher z-index value */
+}
+
+canvas {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
