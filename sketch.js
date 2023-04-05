@@ -17,6 +17,7 @@ function setup() {
 }
 
 function draw() {
+  
   background(0, 10);
   for(let i = 0; i < num; i ++) {
     let p = particles[i];
@@ -30,6 +31,7 @@ function draw() {
       p.y = random(height);
     }
   }
+  
 }
 
 function mouseReleased() {
@@ -43,11 +45,15 @@ function mouseReleased() {
     p.y += sin(a);
     
     // Add a random value to the angle
-    let randomAngle = random(-0.2, 0.2);
+    let randomAngle = random(-.01, 0.1);
     a += randomAngle;
     p.x += cos(a);
     p.y += sin(a);
+
+    
   }
+
+  
 }
 
 function onScreen(v) {
